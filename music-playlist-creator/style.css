@@ -1,6 +1,92 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    flex: auto;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    color: grey;
+    flex: auto;
 }
+header{
+    padding: 2px;
+    border: 2px solid grey;
+}
+footer{
+    padding: 2px;
+    border: 2px solid grey;
+}
+h1{
+    font-size: 21px;
+    color: grey;
+}
+.playlist-cards{
+    margin-top: 30px ;
+    margin-left: 30px;
+
+    /* display:flex;
+    flex-wrap:wrap; */
+    /* flex:auto; */
+    /* flex-wrap:wrap; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    /* gap: var(--pad-large); */
+    
+}
+.individual-card{
+    width: 200px;
+    height: 300px;
+    padding: 2px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    
+    
+}
+#playlist-card-image{
+    width: 195px;
+    height: 175px;
+    border: 2px solid grey;
+    border-radius: 3px;
+}
+
+/* Model Overlay */
+.model-overlay{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.model-content{
+    background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+ .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+ }
+ 
+
