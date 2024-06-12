@@ -6,84 +6,80 @@
     
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <!-- Your header content here -->
-         <h1>Music Playlist Explorer</h1>
+         <h1 id="musicTitle" >Music Playlist Explorer</h1>
+         <nav #navigation>
+            <ul>
+                <li><a href="featured.html"><strong>Featured Playlist</strong></a></li>
+                <li><a id="add-playlist"><strong>Add Playlist</strong></a></li>
+                <!-- Add other navigation links here -->
+            </ul>
+        </nav>
     </header>
 
     <main> 
         <!-- Your main content here -->
         <!-- Playlist gallery, Footer -->
-         <div class="playlist-cards">
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
+         <div class="playlist-cards" id="playlist-cards">
+            <div class="individual-card" id="individual-card">
+                <!-- <img id="playlist-card-image" src="">
+                <h3 id="playlist-title"></h3>
+                <p id="creator-name"></p> -->
+                <!-- <p>like count</p> -->
             </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-            <div class="individual-card">
-                <img id="playlist-card-image" src="./assets/img/playlist.png">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>like count</p>
-            </div>
-
          </div>
     </main>
-    
-    <div class="modal-overlay">
+
+
+    <div  id="modal-overlay" class="modal-overlay">
         <div class="modal-content">
-           <span class="close">&times;</span>
-           <h1 id="playlistTitle"></h1>
-           <img id="playlistImage" src="" >
-           <p id="creatorName"></p>
-           <div id="artistLineup">
+            <span class="close" id="close">&times;</span>
+            <section id="image-title-name">
+                <img id="playlistImage" src="" alt="Playlist Image">
+                <section id="titleandname">
+                    <h1 id="playlistTitle"></h1>
+                    <p id="creatorName"></p>
+                    <button id="shuffle-button">Shuffle Songs</button>
+                </section>
+            </section>
+            
+            <div id="songList">
+                <li id="song-item">
 
-           </div>
+                </li>
+                <!-- <section id="lists-image-title-name">
+            <div class="song-details">
+               <img id="songImage" src="${song.cover_art}" alt="${song.title}">
+               <section id="song-artist">
+                  <p class="song-title">${song.title}</p>
+                  <p>Artist: ${song.artist}</p>
+                  <p>Album: ${song.album}</p>
+               </section>
+            </div>
+         </section>
+         `; -->
+            </div>
+
         </div>
-     </div>
-     
+    </div>
 
+    <div  id="playlist-overlay" class="playlist-overlay">
+        <form id="add-playlist-content" class="add-playlist-content">
+            <span class="playlist-close" id="playlist-close">&times;</span>
+            <label for="new-playlist-name">Playlist Name:</label>
+            <input type="text" id="new-playlist-name" name="new-playlist-name" required>
+            <label for="new-creator-name">Creator Name:</label>
+            <textarea id="new-creator-name" name="new-creator-name" required></textarea>
+            <button id="add-playlist-button" type="submit">Add Playlist</button>
+        </form>
+    </div>
     <footer>
         <!-- Your footer content here -->
     </footer>
