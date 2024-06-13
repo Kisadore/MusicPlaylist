@@ -4,7 +4,6 @@ Submitted by: **Kiahna Isadore**
 
 Estimated time spent: **19** hours spent in total not including wednesday at the office
 
-Deployed Application (optional): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
 
 ### Application Features
 
