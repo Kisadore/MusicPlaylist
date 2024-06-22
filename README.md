@@ -4,7 +4,7 @@ Submitted by: **Kiahna Isadore**
 
 Estimated time spent: **19** hours 
 
-Deployed Application (optional): [Deployed Site](https://kisadore.github.io/MusicPlaylist/)
+Deployed Application (optional): [Music Playlist Explorer](https://kisadore.github.io/MusicPlaylist/)
 
 
 ### Application Features
